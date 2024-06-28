@@ -42,7 +42,6 @@ The goal of the project is to develop a tool for the early detection and prevent
 ```
 ├── README.md
 ├── Dataset 
-│   ├── [data_cardiovascular_risk.csv](https://github.com/Navneet2409/cardiovascular-risk-prediction/files/10660302/data_cardiovascular_risk.csv)
 ├── Problem Statement
 │
 ├── Know Your Data
@@ -64,8 +63,6 @@ The goal of the project is to develop a tool for the early detection and prevent
 │   ├── Encoding
 |   ├── Feature Selection
 |   ├── Extra Trees Classifier
-│   ├── Chi-square Test
-|   ├── Information Gain
 |   ├── Handling Class Imbalance
 │
 ├── Model Building
@@ -75,46 +72,27 @@ The goal of the project is to develop a tool for the early detection and prevent
 │
 ├── Model Implementation
 │   ├── Logistic Regression
+|   ├── Naive Bayes Classifier
 |   ├── SVM
-|   ├── KNN
-│   ├── Decision Tree
 |   ├── Random Forest
-|   ├── AdaBoost
 │   ├── XGBoost
-|   ├── LightGBM
-|
-│   
-├── Report
-├── Presentation
-├── Result
-└── Reference
-```
+|   ├── KNN
 
 
 ## Conclusion
 In this project, we tackled a classification problem in which we had to classify and predict the 10-year risk of future coronary heart disease (CHD) for patients. The goal of the project was to develop a tool for the early detection and prevention of CHD, addressing a significant public health concern using machine learning techniques.
 
     - There were approximately 3390 records and 16 attributes in the dataset.
-    - We started by importing the dataset, and necessary libraries and conducted exploratory data analysis (EDA) to get a clear insight into each feature by 
-    separating the dataset into numeric and categoric features. We did Univariate, Bivariate, and even multivariate analyses.
+    - We started by importing the dataset, and necessary libraries and conducted exploratory data analysis (EDA) to get a clear insight into each feature by separating the dataset into numeric and categoric features. We did Univariate, Bivariate, and even multivariate analyses.
     - After that, the outliers and null values were removed from the raw data and treated. Data were transformed to ensure that it was compatible with machine 
     learning models.
     - In feature engineering we transformed raw data into a more useful and informative form, by creating new features, encoding, and understanding important 
     features. We handled target class imbalance using SMOTE.
-    - Then finally cleaned and scaled data was sent to various models, the metrics were made to evaluate the model, and we tuned the hyperparameters to make sure the 
-    right parameters were being passed to the model. To select the final model based on requirements, we checked model_result.
-    - When developing a machine learning model, it is generally recommended to track multiple metrics because each one highlights distinct aspects of model 
-    performance. We are, however, focusing more on the Recall score and F1 score because we are dealing with healthcare data and our data is unbalanced.
-    - With an f1-score of 0.907 and a recall score of 0.863 on test data, we have noticed that LightGBM Classifier outperforms all other models. It is safe to say 
-    that the LightGBM Classifier is the best option for our issue if the f1-score is to be considered.
+    - Then finally cleaned and scaled data was sent to various models, the metrics were made to evaluate the model, and we tuned the hyperparameters to make sure the right parameters were being passed to the model. To select the final model based on requirements, we checked model_result.
+    - When developing a machine learning model, it is generally recommended to track multiple metrics because each one highlights distinct aspects of model performance. We are, however, focusing more on the Recall score and F1 score because we are dealing with healthcare data and our data is unbalanced.
+    - With an f1-score of 0.907 and a recall score of 0.863 on test data, we have noticed that LightGBM Classifier outperforms all other models. It is safe to say that the LightGBM Classifier is the best option for our issue if the f1-score is to be considered.
     - Our highest recall score, 0.938%, came from KNN.
-    - The XGBoost and RandomForestClassifier tree-based algorithms also provided the best approach to achieving our goal. We were successful in achieving a 
-    respective f1-score of 0.904 and 0.893.
-    - The recall score is of the utmost significance in the medical field, where we place a greater emphasis on reducing false negative values because we do not want 
-    to mispredict a person's safety when he is at risk. With recall scores of 0.938, 0.870, and 0.863, respectively, KNN, XGB, and LGBM performed the best.
+    - The XGBoost and RandomForestClassifier tree-based algorithms also provided the best approach to achieving our goal. We were successful in achieving a respective f1-score of 0.904 and 0.893.
+    - The recall score is of the utmost significance in the medical field, where we place a greater emphasis on reducing false negative values because we do not want to mispredict a person's safety when he is at risk. With recall scores of 0.938, 0.870, and 0.863, respectively, KNN, XGB, and LGBM performed the best.
 
-    - Last but not least, we can select the Final model as our KNN classifier due to its highest recall score. It is acceptable to classify a healthy individual as 
-    having a 10-year risk of coronary heart disease CHD (false positive) and to follow up with additional medical tests; however, it is categorically unacceptable to 
-    miss identifying a particular patient or to classify a particular patient as healthy (false negative).
-    
-    
+    - Last but not least, we can select the Final model as our KNN classifier due to its highest recall score. It is acceptable to classify a healthy individual as having a 10-year risk of coronary heart disease CHD (false positive) and to follow up with additional medical tests; however, it is categorically unacceptable to miss identifying a particular patient or to classify a particular patient as healthy (false negative).
