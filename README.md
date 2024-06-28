@@ -90,11 +90,18 @@ In this project, we tackled a classification problem in which we had to classify
     features. We handled target class imbalance using SMOTE.
     - Then finally cleaned and scaled data was sent to various models, the metrics were made to evaluate the model, and we tuned the hyperparameters to make sure the right parameters were being passed to the model. To select the final model based on requirements, we checked model_result.
     - When developing a machine learning model, it is generally recommended to track multiple metrics because each one highlights distinct aspects of model performance. We are, however, focusing more on the Recall score and F1 score because we are dealing with healthcare data and our data is unbalanced.
-    - With an f1-score of 0.907 and a recall score of 0.863 on test data, we have noticed that LightGBM Classifier outperforms all other models. It is safe to say that the LightGBM Classifier is the best option for our issue if the f1-score is to be considered.
-    - Our highest recall score, 0.938%, came from KNN.
-    - The XGBoost and RandomForestClassifier tree-based algorithms also provided the best approach to achieving our goal. We were successful in achieving a respective f1-score of 0.904 and 0.893.
-    - The recall score is of the utmost significance in the medical field, where we place a greater emphasis on reducing false negative values because we do not want to mispredict a person's safety when he is at risk. With recall scores of 0.938, 0.870, and 0.863, respectively, KNN, XGB, and LGBM performed the best.
 
-    - Last but not least, we can select the Final model as our KNN classifier due to its highest recall score. It is acceptable to classify a healthy individual as having a 10-year risk of coronary heart disease CHD (false positive) and to follow up with additional medical tests; however, it is categorically unacceptable to miss identifying a particular patient or to classify a particular patient as healthy (false negative).
+If we want to completely avoid any situations where the patient has heart disease, a high recall is desired. Whereas if we want to avoid treating a patient with no heart diseases a high precision is desired.
+
+Assuming that in our case the patients who were incorrectly classified as suffering from heart disease are equally important since they could be indicative of some other ailment, so we want a balance between precision and recall and a high f1 score is desired.
+
+Since we have added synthetic datapoints to handle the huge class imbalance in training set, the data distribution in train and test are different so the high performance of models in the train set is due to the train-test data distribution mismatch and not due to overfitting.
+
+Best performance of Models on test data based on evaluation metrics for class 1:
+  1. Recall - SVC
+  2. Precision - Naive Bayes Classifier
+  3. F1 Score - Logistic Regression, XGBoost
+  4. Accuracy - Naive Bayes Classifier
+
 
 
