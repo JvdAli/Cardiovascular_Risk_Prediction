@@ -1,4 +1,4 @@
-# cardiovascular-risk-prediction
+# Cardiovascular Risk Prediction
 The goal of the project is to develop a tool for the early detection and prevention of CHD, addressing a significant public health concern using machine learning techniques.
 
 ## Table of Content
