@@ -77,7 +77,7 @@ The goal of the project is to develop a tool for the early detection and prevent
 |   ├── Random Forest
 │   ├── XGBoost
 |   ├── KNN
-
+```
 
 ## Conclusion
 In this project, we tackled a classification problem in which we had to classify and predict the 10-year risk of future coronary heart disease (CHD) for patients. The goal of the project was to develop a tool for the early detection and prevention of CHD, addressing a significant public health concern using machine learning techniques.
