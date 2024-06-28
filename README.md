@@ -82,7 +82,7 @@ The goal of the project is to develop a tool for the early detection and prevent
 ## Conclusion
 In this project, we tackled a classification problem in which we had to classify and predict the 10-year risk of future coronary heart disease (CHD) for patients. The goal of the project was to develop a tool for the early detection and prevention of CHD, addressing a significant public health concern using machine learning techniques.
 
-    - There were approximately 3390 records and 16 attributes in the dataset.
+- There were approximately 3390 records and 16 attributes in the dataset.
     - We started by importing the dataset, and necessary libraries and conducted exploratory data analysis (EDA) to get a clear insight into each feature by separating the dataset into numeric and categoric features. We did Univariate, Bivariate, and even multivariate analyses.
     - After that, the outliers and null values were removed from the raw data and treated. Data were transformed to ensure that it was compatible with machine 
     learning models.
@@ -96,3 +96,5 @@ In this project, we tackled a classification problem in which we had to classify
     - The recall score is of the utmost significance in the medical field, where we place a greater emphasis on reducing false negative values because we do not want to mispredict a person's safety when he is at risk. With recall scores of 0.938, 0.870, and 0.863, respectively, KNN, XGB, and LGBM performed the best.
 
     - Last but not least, we can select the Final model as our KNN classifier due to its highest recall score. It is acceptable to classify a healthy individual as having a 10-year risk of coronary heart disease CHD (false positive) and to follow up with additional medical tests; however, it is categorically unacceptable to miss identifying a particular patient or to classify a particular patient as healthy (false negative).
+
+
