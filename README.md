@@ -98,7 +98,7 @@ Assuming that in our case the patients who were incorrectly classified as suffer
 Since we have added synthetic datapoints to handle the huge class imbalance in training set, the data distribution in train and test are different so the high performance of models in the train set is due to the train-test data distribution mismatch and not due to overfitting.
 
 Best performance of Models on test data based on evaluation metrics for class 1:
-  1. Recall - SVC
+  1. Recall - Support Vector Classifier(SVC)
   2. Precision - Naive Bayes Classifier
   3. F1 Score - Logistic Regression, XGBoost
   4. Accuracy - Naive Bayes Classifier
