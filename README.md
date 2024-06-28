@@ -16,28 +16,24 @@ The goal of the project is to develop a tool for the early detection and prevent
   
  
 ## Dataset
-  The dataset is from an ongoing cardiovascular study on residents of Flamingham, Massachusetts. The data set includes over 3300 records and 16 attributes, each of 
-  which is a potential risk factor, including demographic, behavioral, and medical risk factors. For more information on the dataset, please visit the Kaggle website at https://www.kaggle.com/datasets/christofel04/cardiovascular-study-dataset-predict-heart-disea
+  The dataset is from an ongoing cardiovascular study on residents of Flamingham, Massachusetts. The data set includes over 3390 records and 17 attributes, each of which is a potential risk factor, including demographic, behavioral, and medical risk factors. For more information on the dataset, please visit the Kaggle website at https://www.kaggle.com/datasets/christofel04/cardiovascular-study-dataset-predict-heart-disea
   
   
 ## Data Pipeline
   1. Analyze Data: 
-      In this initial step, we attempted to comprehend the data and searched for various available features. We looked for things like the shape of the data, the 
-      data types of each feature, a statistical summary, etc. at this stage.
-  2. EDA: 
-      EDA stands for Exploratory Data Analysis. It is a process of analyzing and understanding the data. The goal of EDA is to gain insights into the data, identify 
-      patterns, and discover relationships and trends. It helps to identify outliers, missing values, and any other issues that may affect the analysis and modeling 
-      of the data.
-  3. Data Cleaning: 
+      In this initial step, we attempted to comprehend the data and searched for various available features. We looked for things like the shape of the data, the data types of each feature, a statistical summary, etc. at this stage.
+  2. EDA:
+     EDA stands for Exploratory Data Analysis. It is a process of analyzing and understanding the data. The goal of EDA is to gain insights into the data, identify patterns, and discover relationships and trends. It helps to identify outliers, missing values, and any other issues that may affect the analysis and modeling of the data.
+  4. Data Cleaning: 
       Data cleaning is the process of identifying and correcting or removing inaccuracies, inconsistencies, and missing values in a dataset. We inspected the dataset 
       for duplicate values. The null value and outlier detection and treatment followed. For the imputation of the null value we used the Mean, Median, and Mode 
       techniques, and for the outliers, we used the Clipping method to handle the outliers without any loss to the data.
-  4. Feature Selection: 
+  5. Feature Selection: 
       At this step, we did the encoding of categorical features. We used the correlation coefficient, chi-square test, information gain, and an extra tree classifier       to select the most relevant features. SMOTE is used to address the class imbalance in the target variable.
-  5. Model Training and Implementation:  
+  6. Model Training and Implementation:  
       We scaled the features to bring down all of the values to a similar range. We pass the features to 8 different classification models. We also did 
       hyperparameter tuning using RandomSearchCV and GridSearchCV.
-  6. Performance Evaluation: 
+  7. Performance Evaluation: 
       After passing it to various classification models and calculating the metrics, we choose a final model that can make better predictions. We evaluated different 
       performance metrics but choose our final model using the f1 score and recall score.
       
