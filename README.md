@@ -1,2 +1,0 @@
-# Cardiovascular_Risk_Prediction
-Cardiovascular_Risk_Prediction_Capstone_Project.
